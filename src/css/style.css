@@ -1,0 +1,47 @@
+.card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-action .material-icons {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #ddd;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-action .material-icons:hover {
+  opacity: 0.65;
+}
+
+.card-action .material-icons.active {
+  color: #ee6e73;
+  animation-name: chart;
+  animation-fill-mode: both;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes chart {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-cart .material-icons {
+  font-size: 1.25rem;
+  margin-right: 10px;
+}
